@@ -8,3 +8,7 @@ Write-Host "LastName is [$LastName]"
 Write-Host "Location is [$Location]"
 Write-Host "Title is [$Title]"
 Write-Host "Password  is [$Password]"
+
+
+###########
+# Get-Content .\New-EmployeeOnboardUser_v1_params.ps1 -Raw | Invoke-Expression

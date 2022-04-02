@@ -16,7 +16,7 @@ Get-ChildItem; Get-Command -Name Get-ChildItem
 ## Maybe you want to introduce some logic or do something to some files; take another action
 
 ## hard to read
-foreach ($file in (Get-ChildItem -Filter '*.txt')) { Write-Host "Reading file [$file.FullName]..."; Write-Host '---------------------------';Get-Content -Path $file.FullName}
+foreach ($file in (Get-ChildItem -Filter '*.txt')) { Write-Host "Reading file [$($file.FullName)]..."; Write-Host '---------------------------'; Get-Content -Path $file.FullName }
 
 ## space it out to look better
 foreach ($file in (Get-ChildItem -Filter '*.txt')) {
